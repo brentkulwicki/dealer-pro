@@ -6,3 +6,7 @@
     border: 1px solid lightcoral;
     background: lightpink;
 }
+
+.bg-danger {
+    background-color: #C5313A !important;
+}
