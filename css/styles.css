@@ -16,17 +16,14 @@
 }
 .nav-link:hover {
     color: rgba(0, 0, 0, 0.9) !important;
+    cursor: pointer;
 }
-/* #landing {
-    height: 100vh;
-} */
 #video {
     width: 560px;
     height: 315px;
     max-width: 80vw;
     max-height: 45vw;
-    /* min-width: 300px;
-    min-height: 168.75px; */
-    /* max-width: 560px;
-    max-height: 315px; */
+}
+.contact-heading {
+    text-align: center;
 }

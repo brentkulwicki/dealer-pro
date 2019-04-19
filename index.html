@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg-light">
-    <div class="container-fluid" id="landing">
+    <div class="container-flex" id="home">
         <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-            <a class="navbar-brand" href="#"><img src="img/dps-stolen.jpg" alt="dealer pro series logo"></a>
+            <a class="navbar-brand" href="#home"><img src="img/dps-stolen.jpg" alt="dealer pro series logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -23,7 +23,7 @@
                         <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Training</a>
+                        <a class="nav-link" href="#training">Training</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about-us">About Us</a>
@@ -40,9 +40,10 @@
             <hr class="my-4">
             <a class="btn btn-danger btn-lg" href="http://webservices.advanceware.net/DealerProB2B/" role="button" target="_blank">Order Now!</a>
         </div>
-        <button type="button" class="btn btn-primary btn-lg btn-block btn-danger mb-5">Have a question? Contact us!</button>
+        <a href="#contact" class="btn btn-primary btn-lg btn-block btn-danger mb-5" role="button" aria-pressed="true">Have a question? Contact us!</a>
     </div>
     <div class="container-fluid">
+        <h2 class="contact-heading mb-4" id="training">Training</h2>
         <div class="row">
           <div class="col-lg">
             <iframe id="video" src="https://www.youtube.com/embed/c6B7V1bBq98" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -52,10 +53,13 @@
           </div>
         </div>
     </div>
+    <a href="https://www.youtube.com/user/MeguiarsUSA" class="btn btn-primary btn-lg btn-block btn-danger my-4" role="button" aria-pressed="true" target="_blank">Want more from Meguiar's?</a>
     <div class="container-fluid">
+        <h2 class="contact-heading mb-4" id="about-us">About Us</h2>
+        <p>Company history here............... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <div class="row">
           <div class="col-md">
-                <div class="card text-white bg-dark" style="width: 18rem;">
+                <div class="card text-white bg-dark my-2" style="width: 18rem;">
                     <img src="img/example-headshot.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Thomas Smith</h5>
@@ -65,7 +69,7 @@
                 </div>
           </div>
           <div class="col-md">
-                <div class="card text-white bg-dark" style="width: 18rem;">
+                <div class="card text-white bg-dark my-2" style="width: 18rem;">
                     <img src="img/example-headshot.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Thomas Smith</h5>
@@ -75,7 +79,7 @@
                 </div>
           </div>
           <div class="col-md">
-                <div class="card text-white bg-dark" style="width: 18rem;">
+                <div class="card text-white bg-dark my-2" style="width: 18rem;">
                     <img src="img/example-headshot.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Thomas Smith</h5>
@@ -89,7 +93,7 @@
     <div class="container-fluid">
         <div class="row">
           <div class="col-md">
-                <div class="card text-white bg-dark" style="width: 18rem;">
+                <div class="card text-white bg-dark my-2" style="width: 18rem;">
                     <img src="img/example-headshot.jpg" class="card-img-top" alt="...">
                     <div class="card-body align-content-center">
                         <h5 class="card-title">Thomas Smith</h5>
@@ -99,7 +103,7 @@
                 </div>
           </div>
           <div class="col-md">
-                <div class="card text-white bg-dark" style="width: 18rem;">
+                <div class="card text-white bg-dark my-2" style="width: 18rem;">
                     <img src="img/example-headshot.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Thomas Smith</h5>
@@ -109,7 +113,7 @@
                 </div>
           </div>
           <div class="col-md">
-                <div class="card text-white bg-dark" style="width: 18rem;">
+                <div class="card text-white bg-dark my-2" style="width: 18rem;">
                     <img src="img/example-headshot.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Thomas Smith</h5>
@@ -120,35 +124,39 @@
           </div>
         </div>
     </div>
-    <form id="contact">
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Your Name</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Email Address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Phone Number</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="555-555-5555">
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Company Name</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Company Name">
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Question/Comment</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-    </form>
+    <div class="container-fluid py-4">
+        <h2 class="contact-heading">Contact Us</h2>
+        <form id="contact">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Your Name</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email Address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Phone Number</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="555-555-5555">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Company Name</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Company Name">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Question/Comment</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+        </form>
+        <button type="button" class="btn btn-danger btn-block btn-lg">Contact Dealer Pro Series</button>
+    </div>
     <div class="container-flex align-bottom bg-secondary text-light pt-5 px-3 pb-1">
         <div class="row">
           <div class="col-3">
             <p>Dealer Pro Series<br>1234 Address St<br>New Albany, IN 47150<br>(812) 555-1234</p>
           </div>
           <div class="col-6 align-self-end" >
-            <p>&copy; Any copyright information here</p>
+            <p>&copy; Copyright information here</p>
           </div>
           <div class="col-3 align-self-end">
             <a href="#"><img src="img/faceboo_icon.png" width="50px"></a>
@@ -156,7 +164,9 @@
           </div>
         </div>
     </div>
-    <script src="js/dealerPro.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- <script src="js/dealerPro.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
