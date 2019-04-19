@@ -10,3 +10,13 @@
 .bg-danger {
     background-color: #C5313A !important;
 }
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+.nav-link:hover {
+    color: rgba(0, 0, 0, 0.9) !important;
+}
+#landing {
+    height: 100vh;
+}
