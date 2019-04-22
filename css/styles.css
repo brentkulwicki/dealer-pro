@@ -2,6 +2,16 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url('../img/bg-autos.jpg');
+    background: rgba(0, 0, 0, 0.5);
+    background-repeat: none;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+}
+
 .not-valid {
     border: 1px solid lightcoral;
     background: lightpink;
