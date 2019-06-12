@@ -57,23 +57,35 @@ button.navbar-toggler {
 }
 
 /* employee section */
+#carousel-overrides {
+    height: auto !important;
+}
 .employee-image {
+    text-align: center;
+    display: block;
     max-width: 200px;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.container-flex {
-    width: 100vw;
+hr {
+    border-color: white;
+    width: 90%;
 }
 
 .employee-card {
-    position: relative;
-    text-align: center;
-    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+.img-container {
+    margin-left: auto;
+    margin-right: auto;
 }
 .bio {
-    max-width: 350px;
-    max-height: 400px;
+    max-width: 85%;
+    height: 45%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
@@ -82,6 +94,12 @@ button.navbar-toggler {
     text-align: center;
     color: #fff;
     z-index: 1;
+    padding-bottom: 35px;
+}
+.bio p {
+    text-align: center;
+    /* max-width: 350px; */
+    max-height: 400px;
     overflow: hidden;
 }
  /* footer */
@@ -122,6 +140,34 @@ button.navbar-toggler {
     text-align: center;
 }
 
+.anchor a {
+    position: absolute;
+    left: 0px;
+    top: -12.5%;
+}
+.anchor {
+    position: relative;
+}
+
+/* Style overrrides */
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.changed-font {
+    text-align: center;
+    font-family: 'Merriweather', serif !important;
+}
+#jumbotron > h1,
+#jumbotron > p {
+    text-align: unset;
+}
+
 /* Media queries */
 @media only screen and (min-width: 730px) {
     /* navbar styling */
@@ -135,15 +181,13 @@ button.navbar-toggler {
     }
 
     /* employee section */
-    .employee-card{
+    /* .employee-card{
         position: unset;
         width: 31.5%;
         display: inline-block;
         margin-left: 1.1%;
-    }
-    .last-employee-card {
-        margin-right: 1%;
-    }
+    } */
+
     .employee-image {
         width: 100%;
         height: auto;
@@ -151,6 +195,10 @@ button.navbar-toggler {
     /* footer */
     .social-icons {
     width: 30%;
+    }
+    /* contact */
+    #contact-container {
+        width: 75vw;
     }
   }
 @media only screen and (min-width: 1000px) {
@@ -171,5 +219,13 @@ button.navbar-toggler {
 
     #address {
      display: unset;
+    }
+    #bot-group {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+     /* contact */
+     #contact-container {
+        width: 60vw;
     }
 }
