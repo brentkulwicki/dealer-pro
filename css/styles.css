@@ -47,7 +47,7 @@ button.navbar-toggler {
     width: 100vw;
     min-height: 12.5%;
     position: fixed;
-    z-index: 1;
+    z-index: 16;
     background-color: #191819 !important;
 }
 /* Jumbotron custom stylings */
@@ -200,7 +200,7 @@ h5,
 }
 /* Media queries */
 
-@media only screen and (min-width: 730px) {
+@media only screen and (min-width: 760px) {
     /* navbar styling */
     a.navbar-brand {
         width: 15%;
