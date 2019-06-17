@@ -122,10 +122,6 @@ hr {
  .social-icons {
     width: 40%;
  }
-
- #address {
-     display: none;
- }
 /*  */
 .body-div {
     background-image: url('../img/bg-autos.jpg');
@@ -255,18 +251,21 @@ h5,
         padding-top: 15%;
     }
 
+    /* company overview section */
+    #company-overview {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    /* company history section */
+    #company-history {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
     /* footer */
     .social-icons {
     width: 18%;
     }
 
-    #address {
-     display: unset;
-    }
-    #bot-group {
-        padding-left: 20%;
-        padding-right: 20%;
-    }
      /* contact */
      #contact-container {
         width: 60vw;
@@ -280,5 +279,4 @@ h5,
     #overview-pic {
         padding-right: 75px;
     }
-    /* need to add more padding on the paragraph divs to push the words in more */
 }
