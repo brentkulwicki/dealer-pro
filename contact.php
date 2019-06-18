@@ -70,18 +70,20 @@ if(isset($_POST['email'])) {
  
     $email_message .= "Name: ".clean_string($name)."\n";
     $email_message .= "Email: ".clean_string($email_from)."\n";
+    $email_message .= "Phone:".clean_string($phone_number)."\n";
+    $email_message .= "Company:".clean_string($company_name)."\n";
     $email_message .= "Message: ".clean_string($message)."\n";
  
 // create email headers
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers); 
+@mail($email_to, $email_subject, $email_message, $headers);
 header('Location: index.html');
 ?>
  
 <head>
-<title>Covenant Building Services</title>
+<title>Dealer Pro Series</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/styles.css">
 </head>
